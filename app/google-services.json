@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "569257430449",
+    "firebase_url": "https://aikam-504a5-default-rtdb.firebaseio.com",
+    "project_id": "aikam-504a5",
+    "storage_bucket": "aikam-504a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569257430449:android:eb42f908a10b6cd6a04190",
+        "android_client_info": {
+          "package_name": "com.android.chatdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569257430449-7mk485illbn4nd46pc0ssdvk5i5uke1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXMt_7baoq-3hATjkx_9lVyhzheBO7Meg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569257430449-7mk485illbn4nd46pc0ssdvk5i5uke1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ChatDemo</string>
+    <string name="email">Email</string>
+    <string name="name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="send">Send</string>
+    <string name="type_here">Type here...</string>
+</resources>
