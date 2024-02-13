@@ -55,8 +55,9 @@ class MainActivity : AppCompatActivity() {
                     val user = snap.getValue(User::class.java)
 
                     // Check if user is not null before adding to the list
-                    user?.let {
-                        userList.add(it)
+                    if (mAuth.currentUser?.uid != user?.uid) {
+                        // Add the user to the userList if the user is not the current user
+                        userList.add(user!!)
                     }
                 }
                 // Notify the adapter that the data set has changed

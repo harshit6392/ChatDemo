@@ -8,4 +8,5 @@
     <string name="already_have_an_account_login">Already have an account? Login</string>
     <string name="send">Send</string>
     <string name="type_here">Type here...</string>
+    <string name="logout">Logout</string>
 </resources>

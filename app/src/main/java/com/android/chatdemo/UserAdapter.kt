@@ -1,6 +1,7 @@
 package com.android.chatdemo
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,7 +19,14 @@ class UserAdapter(private val context: Context, private val userList: List<User>
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val user = userList[position]
-        holder.bind(user)
+        holder.textName.text = user.name
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, ChatActivity::class.java)
+            intent.putExtra("name", user.name)
+            intent.putExtra("uid", user.uid)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
@@ -26,9 +34,6 @@ class UserAdapter(private val context: Context, private val userList: List<User>
     }
 
     inner class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val textName: TextView = itemView.findViewById(R.id.txt_name)
-        fun bind(user: User) {
-            textName.text = user.name
-        }
+        val textName: TextView = itemView.findViewById(R.id.txt_name)
     }
 }

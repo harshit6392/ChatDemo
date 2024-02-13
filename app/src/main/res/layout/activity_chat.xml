@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ChatActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -23,7 +24,7 @@
         android:padding="20dp">
 
         <EditText
-            android:id="@+id/message_text_field"
+            android:id="@+id/messageTextField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -33,7 +34,8 @@
             android:padding="10dp"
             android:paddingStart="20dp"
             android:textColor="@color/black"
-            android:textColorHint="#848484" />
+            android:textColorHint="#848484"
+            android:inputType="text" />
 
         <Button
             android:id="@+id/buttonSend"
@@ -41,6 +43,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/btn_background"
             android:padding="10dp"
+            android:elevation="4dp"
             android:text="@string/send"
             android:textColor="#ffffff" />
     </LinearLayout>
